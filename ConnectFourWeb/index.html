@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css"/>
+
+</head>
+<body>
+<h1 id="connecting"></h1>
+
+<div id="container">
+    <a href="." id="start-new">Start new game</a>
+
+    <section id="create-game">
+        <h1>Create game</h1>
+
+        <label for="username">Name: </label>
+        <input type="text" name="username" id="username"/>
+        <a href="#" id="create">Create</a>
+    </section>
+
+    <section id="select-type">
+        <h1>Select piece</h1>
+
+        <a href="#" class="piece fire" data-type="fire"></a>
+        <a href="#" class="piece sun" data-type="sun"></a>
+        <a href="#" class="piece nature" data-type="nature"></a>
+        <a href="#" class="piece ice" data-type="ice"></a>
+        <a href="#" class="piece water" data-type="water"></a>
+        <a href="#" class="piece moon" data-type="moon"></a>
+    </section>
+
+    <div id="link">
+
+    </div>
+
+    <div id="gamestatus">
+
+    </div>
+
+    <div class="selection">
+        <div class="piece moon" id="selection"></div>
+    </div>
+
+    <div class="board">
+
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/js/socket.io-1.4.5.js"></script>
+<script type="text/javascript" src="assets/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
